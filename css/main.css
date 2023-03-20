@@ -185,7 +185,8 @@ a:hover, a:active { text-decoration: none;}
 }
 
 #container {
-            width: 1080px;
+            width: 55vw;
+            height: auto;
             overflow: hidden;
             margin: auto;
             background-color: #e2ecf5;
@@ -207,7 +208,7 @@ a:hover, a:active { text-decoration: none;}
 #slide > li > img {
     display: block;
     width: 92%;
-    height: 486px;
+    height: auto;
     margin: 4%;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     border: 1px solid white;
@@ -221,7 +222,7 @@ a:hover, a:active { text-decoration: none;}
 
 @keyframes dudung {
     from { width: 92%; }
-    50% { width: 95%; height: 500px; }
+    50% { width: 95%; height: 95%; }
     to { width: 92%; }
 }
 
