@@ -232,7 +232,7 @@ a:hover, a:active { text-decoration: none;}
 	margin:0;
 	padding:0;
 	text-align:center;
-	overflow: scroll;
+	overflow: auto;
 }
 
 .hrPage_line {
