@@ -179,6 +179,51 @@ a:hover, a:active { text-decoration: none;}
 	margin-top:5px;
 	padding:0;
 }
+.cont-wrap {
+	width: 100%;
+	background-color: #e2ecf5;
+}
+
+#container {
+            width: 1080px;
+            overflow: hidden;
+            margin: auto;
+            background-color: #e2ecf5;
+        }
+
+#slide {
+    /* 사진 다섯 장이 나열될 수 있도록 너비 설정 */
+    /* = #container 요소의 너비 ÷ 3 x 5 */
+    width: 166.67%;
+}
+
+#slide::after { content: ""; display: block; clear: both; }
+
+#slide > li {
+    float: left;
+    width: 20%;
+}
+
+#slide > li > img {
+    display: block;
+    width: 92%;
+    height: 486px;
+    margin: 4%;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+#slide.dudung > li > img {
+    animation-name: dudung;
+    animation-duration: 400ms;
+}
+
+@keyframes dudung {
+    from { width: 92%; }
+    50% { width: 95%; height: 500px; }
+    to { width: 92%; }
+}
 
 .hrPage {
 	width: 100%;
