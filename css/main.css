@@ -232,19 +232,21 @@ a:hover, a:active { text-decoration: none;}
 	margin:0;
 	padding:0;
 	text-align:center;
+	overflow: scroll;
 }
 
 .hrPage_line {
 	float:left;
 	margin-top:76px;
-	width:55%;
+	width:40%;
+	margin-left: 10vw;
 }
 
 .youtube {
 	float:right;
-	margin-left:25px;
-	margin-right:20px;
-	width:40%;
+	margin-left:2vw;
+	margin-right:10vw;
+	width:30%;
 }
 
 .hrPage_s {
@@ -284,6 +286,7 @@ a:hover, a:active { text-decoration: none;}
 	display:inline-block;
 	text-align:center;
 	margin-top:65.6px;
+	width: 100%;
 }
 
 .page_2 {
