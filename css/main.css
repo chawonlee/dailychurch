@@ -7,6 +7,10 @@ body {
 a {
   text-decoration: none;
 }
+:root {
+  --dohyeon-font: 'Do Hyeon', sans-serif;
+  --noto-font: 'Noto Sans KR', sans-serif;
+}
 
 /*INNER*/
 .inner {
@@ -35,12 +39,13 @@ header .header__menu {
   padding-left: 0;
 }
 header .header__menu li {
-  padding: .5rem .9rem;
+  padding: .5rem 1.3rem;
   font-size: 1.25rem;
 }
 header .header__menu li a {
   color: black;
-  font-weight: 600;
+  font-family: var(--noto-font);
+  font-weight: 400;
 } 
 header .header__links {
   display: flex;
@@ -50,10 +55,10 @@ header .header__links li {
   padding: .5rem .75rem;
 }
 header .header__links a {
-  font-size: .9rem;
+  font-size: 1rem;
   color: black;
-  font-weight: 600;
   vertical-align: center;
+  font-family: 'Do Hyeon', sans-serif;
 }
 header .header__links div {
   color: black;
@@ -86,23 +91,36 @@ header .header__hamburger {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #313131;
+  color: #424242;
 }
-
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: rgba(90, 90, 90, 0.993);
+}
 .section2 .inner .mainMent {
   font-size: 1.8rem;
-  font-weight: 500;
-  padding: 2rem
+  padding: 1.6rem;
+  letter-spacing: 0.07rem;
+  font-family: var(--noto-font);
+  font-weight: 400;
 }
 .section2 .inner .subMent {
   font-size: 1.2rem;
-  line-height: 1.7rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.06rem;
+  font-family: var(--noto-font);
+  font-weight: 300;
+  padding-bottom: 1.6rem;
 }
 
-@media screen and (max-width: 1385px) {
+@media screen and (max-width: 1400px) {
   header {
     display: flex;
   }
+  header .header__logo img {
+    left: 1.75rem;
+    width: 12.8rem;
+    padding: 0.5rem 0.75rem;
+}
   header .header__menu li {
     display: none;
   }
@@ -115,6 +133,10 @@ header .header__hamburger {
     color: black;
     padding: 10px;
   }
+  .material-icons {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
   .mainSwiper {
     width: 100%;
     height: 40%;
@@ -123,6 +145,9 @@ header .header__hamburger {
     display: none;
   }
   .section2 .inner .subMent {
+    display: none;
+  }
+  .swiper-button-next, .swiper-button-prev {
     display: none;
   }
 }
