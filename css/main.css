@@ -109,9 +109,54 @@ header .header__hamburger {
   letter-spacing: 0.06rem;
   font-family: var(--noto-font);
   font-weight: 300;
-  padding-bottom: 1.6rem;
+  padding: 1.6rem 0 1.6rem 0;
 }
 
+.section3 .banner__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  row-gap: 2.5rem;
+  padding: 1.875rem 1.875rem 2rem 1.875rem;
+  place-items: center;
+}
+.section3 .banner__grid .banner__content {
+}
+.section3 .banner__grid .banner__content img{
+  width: 32rem;
+  height: 18.75rem;
+  border-radius: .625rem;
+  object-fit: cover;
+}
+.section3 .banner__grid .banner__content img:hover{
+  filter: brightness(105%);
+}
+
+.section4 .sub__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  column-gap: 1rem;
+  row-gap: 2.5rem;
+  margin: 3rem 1.875rem 6rem 1.875rem;
+  place-items: center;
+}
+.section4 .sub__grid .sub__content {
+  width: 250px;
+  height: 200px;
+  background-color: grey;
+  border-radius: 20px;
+}
+.section4 .sub__grid .sub__content:hover {
+  filter: brightness(105%);
+}
+
+.section5-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #F6F5F0;
+}
 @media screen and (max-width: 1400px) {
   header {
     display: flex;
