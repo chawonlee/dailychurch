@@ -29,7 +29,34 @@ const subSwiper = new Swiper ('.subSwiper', {
     clickable: true // 사용자의 페이지 번호 요소 제어 가능 여부
   },
   navigation: { // 슬라이드 이전/다음 버튼 사용 여부
-    prevEl: '.subSwiper .swiper-prev', // 이전 버튼 선택자
-    nextEl: '.subSwiper .swiper-next' // 다음 버튼 선택자
+    prevEl: '.subSwiper .swiper-button-prev', // 이전 버튼 선택자
+    nextEl: '.subSwiper .swiper-button-next' // 다음 버튼 선택자
   }
 })
+
+
+//youtube
+// Youtube IFrame API를 비동기로 로드합니다.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+function onYouTubePlayerAPIReady() {
+  // <div id="player"></div>
+  new YT.Player('player', {
+    videoId: 'RJIqa3zrnzM', // 최초 재생할 유튜브 영상 ID
+    playerVars: {
+      autoplay: true, // 자동 재생 유무
+      loop: true, // 반복 재생 유무
+      playlist: 'RJIqa3zrnzM' // 반복 재생할 유튜브 영상 ID 목록
+    },
+    events: {
+      // 영상이 준비되었을 때,
+      onReady: function (event) {
+        event.target.mute() // 음소거!
+      }
+    }
+  })
+}
+
