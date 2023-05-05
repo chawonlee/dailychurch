@@ -368,7 +368,23 @@ footer .foot .copy {
   font-family: var(--noto-font);
   padding-left: 3rem;
 }
-
+/*SCROLL TO TOP*/
+#to-top {
+  position: fixed;
+  bottom: 50%;
+  right: 30px;
+  z-index: 9;
+  width: 42px;
+  height: 42px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 1400px) {
   header {
